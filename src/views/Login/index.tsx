@@ -30,7 +30,7 @@ export default function Login() {
             <div className="captchaBox">
               <Input placeholder="验证码" />
               <div className="captchaImg">
-                <img height="32" src="https://1234ittv.com/apis/user/api/user/getVerifyCode?uuid=98c4b47895c74a388bd9dc8e77d3d001" alt="" />
+                <img height="32" src="https://1234ittv.com/apis/user/api/user/getVerifyCode?uuid=1d446189fba241b6a70a2a8cabbf5fad" alt="" />
               </div>
             </div>
             <Button type="primary" block>
