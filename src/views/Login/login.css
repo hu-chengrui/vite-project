@@ -1,0 +1,16 @@
+.loginbox .ant-input,
+.loginbox .ant-input-password {
+  background: rgba(255, 255, 255, 0);
+  border-color: #1890ff;
+  color: #fff;
+}
+.loginbox .anticon.ant-input-password-icon {
+  color: #1890ff;
+}
+.loginbox .captchaBox {
+  display: flex;
+}
+.loginbox .captchaBox .captchaImg {
+  margin-left: 20px;
+  cursor: pointer;
+}
