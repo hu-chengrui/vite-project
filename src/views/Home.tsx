@@ -1,4 +1,4 @@
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { Breadcrumb, Layout } from 'antd';
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import MainMenu from '@/components/MainMenu'
@@ -11,7 +11,7 @@ const Views: React.FC = () => {
     return (
         <Layout style={{ minHeight: '100vh' }}>
             {/* 侧边栏 */}
-            <Sider collapsible collapsed={collapsed} onCollapse={value => setCollapsed(value)}>
+            <Sider collapsible collapsed={collapsed} onCollapse={value => setCollapsed(value)} >
                 {/* 侧边栏logo */}
                 <div className="logo" />
                 <MainMenu></MainMenu>

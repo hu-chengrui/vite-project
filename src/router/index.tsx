@@ -9,6 +9,10 @@ import Login from "@/views/Login/index"
 const Page1 = lazy(() => import("../views/Page1"))
 const Page2 = lazy(() => import("../views/Page2"))
 const About = lazy(() => import("../views/About"))
+const Alex = lazy(() => import("../views/User/Alex"))
+const Tom = lazy(() => import("../views/User/Tom"))
+const Bill = lazy(() => import("../views/User/Bill"))
+
 
 const withLoadingComponent = (comp: JSX.Element) => (
     <React.Suspense fallback={<div>Loading...</div>}>
@@ -36,6 +40,18 @@ const routes = [
             {
                 path: "/about",
                 element: withLoadingComponent(<About />)
+            },
+            {
+                path: "/user/alex",
+                element: withLoadingComponent(<Alex />)
+            },
+            {
+                path: "/user/tom",
+                element: withLoadingComponent(<Tom />)
+            },
+            {
+                path: "/user/bill",
+                element: withLoadingComponent(<Bill />)
             },
         ]
     },
